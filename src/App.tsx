@@ -3,51 +3,27 @@ import React from 'react';
 function App() {
   return (
     <div className="w-screen min-h-screen text-white overflow-y-auto relative bg-black font-inter">
-      {/* Flowing Red Abstract Background */}
+      {/* Subtle Red Abstract Background */}
       <div 
         className="absolute inset-0 z-0"
         style={{
           background: `
-            linear-gradient(135deg, rgba(139, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.9) 40%, rgba(139, 0, 0, 0.4) 100%),
+            radial-gradient(ellipse 700px 350px at 15% 20%, rgba(220, 38, 38, 0.4) 0%, rgba(220, 38, 38, 0.2) 35%, transparent 60%),
+            radial-gradient(ellipse 500px 250px at 85% 80%, rgba(185, 28, 28, 0.3) 0%, rgba(220, 38, 38, 0.15) 40%, transparent 70%),
+            radial-gradient(ellipse 600px 300px at 70% 10%, rgba(239, 68, 68, 0.25) 0%, rgba(220, 38, 38, 0.1) 50%, transparent 80%),
+            radial-gradient(ellipse 800px 400px at 30% 90%, rgba(220, 38, 38, 0.5) 0%, rgba(185, 28, 28, 0.2) 35%, transparent 65%),
             #000000
           `,
         }}
       >
-        {/* Small circular gradients */}
+        {/* Additional flowing shapes */}
         <div 
-          className="absolute top-20 left-20 w-32 h-32 rounded-full opacity-30"
+          className="absolute inset-0"
           style={{
-            background: 'radial-gradient(circle, rgba(220, 38, 38, 0.4) 0%, transparent 70%)'
-          }}
-        />
-        <div 
-          className="absolute top-40 right-32 w-24 h-24 rounded-full opacity-25"
-          style={{
-            background: 'radial-gradient(circle, rgba(185, 28, 28, 0.5) 0%, transparent 70%)'
-          }}
-        />
-        <div 
-          className="absolute bottom-60 left-16 w-40 h-40 rounded-full opacity-20"
-          style={{
-            background: 'radial-gradient(circle, rgba(239, 68, 68, 0.3) 0%, transparent 70%)'
-          }}
-        />
-        <div 
-          className="absolute bottom-32 right-20 w-28 h-28 rounded-full opacity-35"
-          style={{
-            background: 'radial-gradient(circle, rgba(153, 27, 27, 0.4) 0%, transparent 70%)'
-          }}
-        />
-        <div 
-          className="absolute top-1/2 left-1/3 w-20 h-20 rounded-full opacity-25"
-          style={{
-            background: 'radial-gradient(circle, rgba(220, 38, 38, 0.3) 0%, transparent 70%)'
-          }}
-        />
-        <div 
-          className="absolute top-1/3 right-1/4 w-36 h-36 rounded-full opacity-20"
-          style={{
-            background: 'radial-gradient(circle, rgba(185, 28, 28, 0.4) 0%, transparent 70%)'
+            background: `
+              radial-gradient(ellipse 400px 200px at 50% 50%, rgba(239, 68, 68, 0.2) 0%, rgba(220, 38, 38, 0.1) 50%, transparent 85%),
+              radial-gradient(ellipse 300px 450px at 90% 30%, rgba(185, 28, 28, 0.3) 0%, rgba(220, 38, 38, 0.1) 40%, transparent 75%)
+            `
           }}
         />
       </div>
@@ -70,7 +46,7 @@ function App() {
           <div className="max-w-4xl">
             <h2 className="text-2xl font-bold mb-6">
               About Dhaarmine studios
-              <div className="w-32 h-0.5 bg-red-500 mx-auto mt-3"></div>
+              <div className="w-24 h-px bg-red-500 mx-auto mt-2"></div>
             </h2>
             <div className="space-y-4 text-base leading-relaxed">
               <p>Dhaarmine Studios is a VFX studio that helps bring stories to life through visual effects.</p>
@@ -84,7 +60,7 @@ function App() {
           <div className="max-w-2xl">
             <h2 className="text-2xl font-bold mb-6">
               Services Offered
-              <div className="w-32 h-0.5 bg-red-500 mx-auto mt-3"></div>
+              <div className="w-24 h-px bg-red-500 mx-auto mt-2"></div>
             </h2>
             <div className="space-y-2 text-lg">
               <p>CGI</p>
@@ -102,14 +78,8 @@ function App() {
           <div className="max-w-2xl">
             <h2 className="text-2xl font-bold mb-4">Contact us</h2>
             <div className="space-y-1 text-lg">
-              <p className="relative inline-block">
-                info@dhaarminestudios.com
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-red-500"></div>
-              </p>
-              <p className="relative inline-block">
-                +91 79919 91917
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-red-500"></div>
-              </p>
+              <p>info@dhaarminestudios.com</p>
+              <p>+91 79919 91917</p>
             </div>
           </div>
 
